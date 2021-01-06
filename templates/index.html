@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+  <df-messenger chat-title="SolarSystemBot" agent-id="7d36715f-897e-43c3-93f3-dd2179913569" language-code="en">
+  </df-messenger>
+
+  
+  <title>SolarSystemBot</title>
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+    }
+    
+    .bg {
+      /* The image used */
+      background-image: url("static/bg_image.png");
+    
+      /* Full height */
+      height: 100%; 
+      width: 100%;
+    
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    </style>
+</head>
+
+<body class="bg">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="h1_tag">This is solar system bot...</h1>
+        
+      </div>
+    </div>
+
+    
+    <div class="row main">
+      <!-- <div class="col">left</div> -->
+      <div class="col text-right">
+        <p>Click here to Chat >>></p>
+      </div>
+  </div>
+
+
+
+  </div>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script src="{{ url_for('static', filename='custom.js')}}"></script>
+</body>
+
+</html>
