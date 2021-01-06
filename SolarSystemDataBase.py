@@ -1,5 +1,6 @@
 from os import read
 from constants import *
+from database_uri import URI
 import json
 import pymongo
 from pymongo import MongoClient
